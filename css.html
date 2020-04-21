@@ -10,21 +10,35 @@
              font-size: 20px;
              color:indigo;
          }
-         li:first-child{background-color: lightcoral;}
+         li:nth-child(2n+1){background-color: lightcoral;}
+         h1::before{
+             content: "hellow";
+             background-color: green;
+            font-size: 15px;
+         }
+         .uni::after{
+             content: "bye";
+             font-size: 15px;
+             background-color:hotpink;
+         }
+         p::before{
+             content: "💓";
+         }
     </style>
 
 <body>
-    <h1> tester </h1>
+    <h1> tester check</h1>
     <h1 class="uni">heigher</h1>
     <h1>lower</h1>
      <input name="email" type="text">
      <br>
      <input name="password" type="text">
      <ul>
-          <li>soni</li>
-          <li>robi</li>
-          <li>som</li>
-          <li>mongol</li>
+          <p>soni</p>
+          <p>robi</p>
+          <p>som</p>
+          <p>mongol</p>
+          <p>bud</p>
      </ul>
 </body>
 </html>
